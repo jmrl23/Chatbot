@@ -1,0 +1,7 @@
+[Software Requirements]
+  - NodeJS & NPM | https://nodejs.org/en/download/
+
+[To Run]
+  - Execute `npm i` on terminal
+  - Execute `npm run start:dev` on terminal to run on development environment
+  - Happy hacking

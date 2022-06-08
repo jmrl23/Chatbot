@@ -27,7 +27,7 @@
     },
     {
       "id": 6,
-      "content": "<a href=\"https://example.com\" style=\"text-decoration: underline\" target=\"_blank\">Link</a>",
+      "content": "To register, kindly click <a href=\"https://example.com\" style=\"text-decoration: underline\" target=\"_blank\">here</a>.",
       "options": [ 2, 3, 4, 5, 7 ]
     },
     {

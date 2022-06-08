@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/socket.io/socket.io.min.js"></script>
+  <script src="/js/app.js" defer></script>
+</head>
+<body>
+  <div class="bg-slate-50 h-screen shadow-lg font-poppins">
+    <header class="bg-red-500 p-4 shadow-md">
+      <h1 class="text-white text-3xl font-bold">
+        <%= botName %>
+      </h1>
+    </header>
+    <div class="overflow-y-auto h-[calc(100%-15rem)]" id="content">
+      <!-- conversation -->
+    </div>
+    <div class="bg-slate-200 min-h-[10.5rem] p-4 flex flex-wrap gap-4 shadow-lg" id="options">
+      <!-- options -->
+    </div>
+  </div>
+</body>
+</html>

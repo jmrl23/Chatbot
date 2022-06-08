@@ -31,7 +31,7 @@
     const container = document.createElement('div')
     const contentContainer = document.createElement('div')
     container.className = 'flex m-4'
-    contentContainer.className = 'max-w-[calc(650px-150px)] bg-slate-500 text-white p-4 rounded-xl shadow-md rounded-bl-sm'
+    contentContainer.className = 'max-w-[calc(650px-150px)] bg-slate-500 text-white p-4 rounded-full shadow-md rounded-bl-sm'
     container.append(contentContainer)
     chat.append(container)
     if (!isBot) {
@@ -40,15 +40,14 @@
       container.classList.add('flex-row-reverse')
       contentContainer.innerHTML = content
       scrollToBottom()
+      return
     }
-    if (isBot) {
-      contentContainer.innerHTML = '<img src="/assets/img/chat-typing.gif" width="30">'
+    contentContainer.innerHTML = '<img src="/assets/img/chat-typing.gif" width="30">'
+    scrollToBottom()
+    setTimeout(() => {
+      contentContainer.innerHTML = content
       scrollToBottom()
-      setTimeout(() => {
-        contentContainer.innerHTML = content
-        scrollToBottom()
-      }, BOT_REPLY_DELAY)
-    }
+    }, BOT_REPLY_DELAY)
   }
 
   const createOptions = options => {
